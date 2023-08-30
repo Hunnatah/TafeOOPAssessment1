@@ -1,7 +1,9 @@
 # Part 2
 
 ### List three major version control for software engineering.SS
-Git, CVS, Mercurial
+* Git
+* CVS
+* Mercurial
 
 ### What are the main advantages to using Git in your software development, and how is it useful for game developers.
 * Branching capabilities: This allows developers to create a seprate "area" for each new feature or bugfix while never drectly changing the main branch, allowing for more streamined development.
@@ -25,7 +27,9 @@ Merge: The act of pushing changes from one branch to another
 
 
 ### Merge conflicts can occur while using git. List merge tools or diff tools you can use to help you merge and deal with conflicts.
-
+* meld
+* opendiff
+* vimdiff
 
 ### In a merged source code file, how does Git let you know there is a conflict?
 Git will not allow conflicting diles to be merged. If you try to do so, it will notify you that the process has failed due to a merge coflict and that you need to solve said conflict for the proces to continue
