@@ -24,7 +24,11 @@ Branch: A separation in the repository to help prevent conflicts caused by multi
 Merge: The act of pushing changes from one branch to another
 
 ### If you are working at a company, which of their policies and procedures might relate to using version control systems such as Git.
-
+Policies and procedures related to:
+* OHS (Mental health)
+* Team-based workflow and coordination
+* Development standards
+* Data saving/storage
 
 ### Merge conflicts can occur while using git. List merge tools or diff tools you can use to help you merge and deal with conflicts.
 * meld
@@ -38,23 +42,45 @@ Git will not allow conflicting diles to be merged. If you try to do so, it will 
 When a merge conflict occurs, users can view the conflicting changes side by side and choose which side to keep while the other one will be discarded.
 
 ### What does git revert do, and how can you use it?
-
+Git revert adds an extra commit onto the end of the branch that retroactively removes the changes of the reverted commit. This is a safer undo method as it can revert changes without actually deleting or orphaning(completely separating commits from the branch) any commit data, leading to a much lower risk of loosing important progress.
 
 ### What does git reset do, and how can you use it? 
-
+Git reset takes the commit in question and it will completely sever it from the branch, taking any future commits with it. This effectively "orphans" the affected commits, meaning there is no direct repo path to them and that the git garbage collector will delete them the next time it runs (usually everey 30 days). This is a much riskier undo method and must never under any circumstances be performed on a publicly available commit.
 
 ### What is the difference between git revert and git reset?
-
+Git revert undoes data by adding more data to counteract the target data, while revert completeley segregates the target data and anything after it. Revert can also only be done to a single commit at a time while reset can easily affect many commits at once.
 
 ### True or False: It is okay to commit broken code to the main branch.
 False
 ### True or False: A commit should only include files that are related to the change you are committing to the repo.
 True
 ### Describe what is DevOps, how is it useful for game developers?
+Devops is a continuous development lifecycle model that emphasizes teamwork/communication, automation and integration between developers and IT operations.<br>
+It cycles through the stages of:
+* Discover
+* Plan
+* Build
+* Test
+* Deploy
+* Operate
+* Observe
+* Continuous Feedback
 
+The Devops method provides benefits in the form of quality assurance through the continuous operation and observation, as well as an increased development speed as a result of a more streamlined development process.
 
 ### List what tools can be used with DevOps. Give a brief description of each one. (at least 3)
-
+* Trello
+	- Team based task/project manager
+* Bitbucket
+	- Git tool designed with DevOps in mind
+* Confluence
+	- Team based info/communication board
 
 ### What is CI/CD and how can it be used to automate the game development process?
+CI/CD stands for Continuous Integration/Continuous Development (or Deployment). It is a method that assists in the frequent delivery of applications through the automation of several stages of app development. Continuous Integration boils down to developers merging code changes to a shared branch frequently and often, revealing conflicts and similar problems early through testing.
 
+Continuous Delivery relates to the frequent release of validated code to a repository, ensuring the codebase is always ready if it needs to be deployed into a production environment.
+
+Continuous Deployment is an extension to Continuous Delivery where the validated code is also released to the porduction environment.
+
+Overall, CI/CD encourages the release of changes to be in small peices rather than all at once, reducing the chance of conflicts and delays in a team-based development cycle.
