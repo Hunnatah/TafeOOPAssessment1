@@ -41,3 +41,6 @@ If you have further problems installing git enquire for support at your companie
 	<li> Repeat from line 2.</li>
 </ol>
 <li> NOTE: Main branch is only for content that is complete and ready for release. DO NOT merge to main from any branch other than staging.
+
+## Link to Part 2
+[Part 2](../Part2/Part2.md)

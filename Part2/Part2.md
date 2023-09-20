@@ -84,3 +84,6 @@ Continuous Delivery relates to the frequent release of validated code to a repos
 Continuous Deployment is an extension to Continuous Delivery where the validated code is also released to the porduction environment.
 
 Overall, CI/CD encourages the release of changes to be in small peices rather than all at once, reducing the chance of conflicts and delays in a team-based development cycle.
+
+## Link to Part 3
+[Part 3](../Part3/Part3.md)
