@@ -68,6 +68,9 @@ It cycles through the stages of:
 
 The Devops method provides benefits in the form of quality assurance through the continuous operation and observation, as well as an increased development speed as a result of a more streamlined development process.
 
+### Hi
+Welcome back
+
 ### List what tools can be used with DevOps. Give a brief description of each one. (at least 3)
 * Trello
 	- Team based task/project manager
